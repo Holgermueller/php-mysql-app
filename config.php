@@ -4,9 +4,9 @@
  * 
  */
 
-$host = "localhost";
-$usename = "root";
-$password = "root";
+$host = "127.0.0.1";
+$username = "root";
+$password = "Kafka#678";
 $dbname = 'test';
 $dsn = "mysql:host=$host;dbname=$dbname";
 $options = array(
