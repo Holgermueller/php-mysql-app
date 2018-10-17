@@ -24,12 +24,10 @@ if(isset($_POST['submit'])) {
 
         $statement = $connection->prepare($sql);
         $statement->execute($new_user);
-
-    } catch(PDOException $error) {
-        echo $sql . "<br>" . $error->getMessage();
+        } catch(PDOException $error) {
+            echo $sql . "<br>" . $error->getMessage();
+        }
     }
-}
-
 ?>
 
 <?php include "templates/header.php"; ?>
