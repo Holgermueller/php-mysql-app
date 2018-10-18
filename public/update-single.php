@@ -65,7 +65,7 @@ if (isset($_GET['id'])) {
 
     <h2>Edit a user</h2>
     <form method="post">
-
+    <input name="csrf" type="hidden" value="<?php echo escape($_SESSION['csrf']); ?>">
         <?php foreach ($user as $key => $value) : ?>
         <label for="<?php echo $key; ?>"><?php echo ucfirst($key); ?></label>
             <input type="text" name="<?php echo $key; ?>" 
