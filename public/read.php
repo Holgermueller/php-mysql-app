@@ -4,22 +4,21 @@ require "../config.php";
 require "../common.php";
 
 if(isset($_POST['submit'])) {
+    if (!hash_equals($_SESSION['csrf'], $_POST['csrf']))die();
 
     try {
         $connection = new PDO($dsn, $username, $password, $options);
-        //display user code
+        
         $sql = "SELECT *
         FROM users
         WHERE location = :location";
 
         $location = $_POST['location'];
-
         $statement = $connection->prepare($sql);
         $statement->bindParam(':location', $location, PDO::PARAM_STR);
         $statement->execute();
 
         $result = $statement->fetchAll();
-
     } catch(PDOException $error) {
         echo $sql . "<br>" . $error->getMessage();
     }
