@@ -3,6 +3,13 @@ label {
     margin: 5px 0;
 }
 
+h1,
+footer {
+    text-align: center;
+}
+
+
+
 table {
     border-collapse: collapse;
     border-spacing: 0;

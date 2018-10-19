@@ -35,9 +35,9 @@ if(isset($_POST['submit'])) {
 
 <?php include "templates/header.php"; ?>
 
-    <?php if (isset($_POST['submit']) && statement) { ?>
+    <?php if (isset($_POST['submit']) && statement) : ?>
         <blockquote><?php echo escape($_POST['firstname']); ?> successfully added. </blockquote>
-    <?php } ?>
+<?php endif; ?>
 
     <h2>Add a user</h2>
 
