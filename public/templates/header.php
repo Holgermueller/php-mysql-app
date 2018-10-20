@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h1>Database App</h1>
+<h1><a href="index.php" class="home-nav">Home</a>Database App</h1>
 
 </body>
 </html>

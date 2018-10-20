@@ -10,7 +10,7 @@
 
 <?php include "templates/header.php"; ?>
 
-<h2>Choose a task.</h2>
+<h2 class="index-h2">Choose a task.</h2>
 
  <ul>
     <li>

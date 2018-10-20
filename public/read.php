@@ -72,6 +72,4 @@ if(isset($_POST['submit'])) {
     <input type="submit" name="submit" value="View Results">
 </form>
 
-<a href="index.php">Home</a>
-
 <?php include "templates/footer.php"; ?>

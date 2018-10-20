@@ -36,12 +36,12 @@ if(isset($_POST['submit'])) {
 <?php include "templates/header.php"; ?>
 
     <?php if (isset($_POST['submit']) && statement) : ?>
-        <blockquote><?php echo escape($_POST['firstname']); ?> successfully added. </blockquote>
+        <blockquote><?php echo escape($_POST['firstname']); ?> successfully added! </blockquote>
 <?php endif; ?>
 
-    <h2>Add a user</h2>
+    <h2 class="create-h2">Add a user</h2>
 
-    <form method="post">
+    <form method="post" class="create-form">
         <input name="csrf" type="hidden" value="<?php echo escape($_SESSION['csrf']); ?>">
         <label for="firstname">First Name</label>
         <input type="text" name="firstname" id="firstname">
@@ -55,7 +55,5 @@ if(isset($_POST['submit'])) {
         <input type="text" name="location" id="location">
         <input type="submit" name="submit" value="Submit">
     </form>
-
-    <a href="index.php" class="return">Home</a>
 
 <?php include "templates/footer.php"; ?>
