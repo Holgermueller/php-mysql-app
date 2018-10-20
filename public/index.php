@@ -10,6 +10,8 @@
 
 <?php include "templates/header.php"; ?>
 
+<h2>Choose a task.</h2>
+
  <ul>
     <li>
         <a href="create.php">
