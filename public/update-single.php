@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
             "email" => $_POST['email'],
             "age" => $_POST['age'],
             "location" => $_POST['location'],
-            "date" =>  $_POST['date']
+            "dateCreated" =>  $_POST['dateCreated']
         ];
 
         $sql = "UPDATE users
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
                     email = :email,
                     age = :age,
                     location = :location,
-                    date = :date
+                    dateCreated = :dateCreated
                 WHERE id = :id";
 
     $statement = $connection->prepare($sql);
