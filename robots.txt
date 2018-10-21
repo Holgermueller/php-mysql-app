@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: http://php-mysql-app.com/sitemap.xml
