@@ -1,3 +1,9 @@
+// Color palette
+@fontsAndAccents: #1E90FF;
+
+// Styles
+@border-radius: 15px;
+
 // Globals
 label {
     display: block;
@@ -11,7 +17,7 @@ footer {
     width: 100%;
     padding: 4px;
     left: 0;
-    color: #1E90FF;
+    color: @fontsAndAccents;
 }
 
 h1 {
@@ -23,7 +29,7 @@ h1 {
 h2 {
     margin-left: 29%;
     text-align: center;
-    color: #1E90FF;
+    color: @fontsAndAccents;
     background-image: linear-gradient(#708090, #dcdcdc);
     padding: 3px;
     width: 45%;
@@ -36,7 +42,7 @@ footer {
 
 .home-nav {
     float: left;
-    color: #1E90FF !important;
+    color: @fontsAndAccents !important;
     font-size: 16px;
     border-right: 2px ridge #dcdcdc;
     padding: 8px;
@@ -62,7 +68,7 @@ a:hover {
 }
 
 .submit:hover {
-    background-color: #1E90FF;
+    background-color: @fontsAndAccents;
     border-radius: 15px;
 }
 
@@ -95,7 +101,7 @@ blockquote {
     background-color: #dcdcdc;
     width: 25%;
     padding: 25px;
-    border: 2px ridge #1E90FF;
+    border: 2px ridge @fontsAndAccents;
     border-radius: 15px;
     margin: 0 0 5% 36%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -108,13 +114,7 @@ blockquote {
 }
 
 .read-form {
-    background-color: #dcdcdc;
-    width: 25%;
-    padding: 25px;
-    border: 2px ridge #1E90FF;
-    border-radius: 15px;
-    margin: 0 0 5% 36%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    .create-form;
 }
 
 table {
@@ -127,4 +127,31 @@ td,
 th {
     padding: 5px;
     border-bottom: 1px solid #aaa;
+}
+
+// Update user page
+.update-header {
+    margin-top: 8%;
+}
+
+.update-table {
+    margin: 0 0 5% 22%;
+}
+
+// Update single
+.edit-single {
+    .create-h2;
+}
+
+.update-form {
+    .create-form;
+}
+
+// Delete
+.delete-header {
+    .create-h2;
+}
+
+.delete-table {
+    margin: 0 0 5% 21%;
 }

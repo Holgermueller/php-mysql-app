@@ -62,9 +62,9 @@ if (isset($_GET['id'])) {
         <blockquote><?php echo escape($_POST['firstname']); ?> successfully updated.</blockquote>
 <?php endif; ?>
 
-    <h2>Edit a user</h2>
+    <h2 class="edit-single">Edit a user</h2>
 
-    <form method="post">
+    <form method="post" class="update-form">
     <input name="csrf" type="hidden" value="<?php echo escape($_SESSION['csrf']); ?>">
         <?php foreach ($user as $key => $value) : ?>
         <label for="<?php echo $key; ?>"><?php echo ucfirst($key); ?></label>
@@ -74,7 +74,7 @@ if (isset($_GET['id'])) {
                 value="<?php echo escape($value); ?>" 
             <?php echo ($key === 'id' ? 'readonly' : null); ?>>
         <?php endforeach; ?>
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit" class="submit">
     </form>
 
 <?php include "templates/footer.php"; ?>

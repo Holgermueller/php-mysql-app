@@ -18,9 +18,9 @@ try {
 
 <?php include "templates/header.php"; ?>
 
-<h2>Update Users</h2>
+<h2 class="update-header">Update Users</h2>
 
-<table>
+<table class="update-table">
     <thead>
         <tr>
             <th>#</th>
@@ -42,7 +42,7 @@ try {
             <td><?php echo escape($row["email"]); ?></td>
             <td><?php echo escape($row["age"]); ?></td>
             <td><?php echo escape($row["location"]); ?></td>
-            <td><?php echo escape($row["date"]); ?></td>
+            <td><?php echo escape($row["dateCreated"]); ?></td>
             <td><a href="update-single.php?id=<?php echo escape($row["id"]); ?>">Edit</a></td>
         </tr>
 <?php endforeach; ?>

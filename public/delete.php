@@ -38,11 +38,11 @@ try {
 
 <?php include "templates/header.php"; ?>
 
-<h2>Delete a user</h2>
+<h2 class="delete-header">Delete a user</h2>
 
 <?php if ($success) echo $success; ?>
 
-<table>
+<table class="delete-table">
     <thead>
         <tr>
             <th>#</th>
@@ -64,7 +64,7 @@ try {
             <td><?php echo escape($row["email"]); ?></td>
             <td><?php echo escape($row["age"]); ?></td>
             <td><?php echo escape($row["location"]); ?></td>
-            <td><?php echo escape($row["date"]); ?></td>
+            <td><?php echo escape($row["dateCreated"]); ?></td>
             <td><a href="delete.php?id=<?php echo escape($row["id"]); ?>">Delete</a></td>
         </tr>
 <?php endforeach; ?>
