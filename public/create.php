@@ -53,7 +53,7 @@ if(isset($_POST['submit'])) {
         <input type="text" name="age" id="age">
         <label for="location">Location</label>
         <input type="text" name="location" id="location">
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit" class="submit">
     </form>
 
 <?php include "templates/footer.php"; ?>

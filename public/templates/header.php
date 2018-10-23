@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Database App</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link type="text/plain" rel="author" href="http://php-mysql-app/humans.txt">
 </head>
 <body>
 

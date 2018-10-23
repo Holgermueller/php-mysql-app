@@ -1,0 +1,10 @@
+/* Team */
+Builder: Holger Mueller
+Site: https://holgermueller.github.io/Resume/
+Location: Minneapolis, MN
+
+[...]
+
+Last Update: 2018/10/22
+Standards: PHP, CSS, Javascript
+Components: Gulp, Less

@@ -30,7 +30,7 @@ if(isset($_POST['submit'])) {
 <?php
     if (isset($_POST['submit'])) {
         if ($result && $statement->rowCount() > 0) { ?>
-            <h2>Results</h2>
+            <h2 class="results-header">Results</h2>
 
             <table>
                 <thead>
@@ -53,7 +53,7 @@ if(isset($_POST['submit'])) {
                     <td><?php echo escape($row["email"]); ?></td>
                     <td><?php echo escape($row["age"]); ?></td>
                     <td><?php echo escape($row["location"]); ?></td>
-                    <td><?php echo escape($row["date"]); ?></td>
+                    <td><?php echo escape($row["dateCreated"]); ?></td>
                 </tr>
             <?php } ?>
                 </tbody>
@@ -63,13 +63,13 @@ if(isset($_POST['submit'])) {
         <?php }
     } ?>
 
-<h2>Find user</h2>
+<h2 class="read-header">Find user</h2>
 
-<form method="post">
+<form method="post" class="read-form">
     <input name="csrf" type="hidden" value="<?php echo escape($_SESSION['csrf']); ?>">
     <label for="location">Location</label>
     <input type="text" id="location" name="location">
-    <input type="submit" name="submit" value="View Results">
+    <input type="submit" name="submit" value="View Results" class="submit">
 </form>
 
 <?php include "templates/footer.php"; ?>
